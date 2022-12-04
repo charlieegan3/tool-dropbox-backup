@@ -146,4 +146,5 @@ func (d *DropboxBackup) DatabaseMigrations() (*embed.FS, string, error) {
 }
 func (d *DropboxBackup) DatabaseSet(db *sql.DB)              {}
 func (d *DropboxBackup) HTTPPath() string                    { return "" }
+func (d *DropboxBackup) HTTPHost() string                    { return "" }
 func (d *DropboxBackup) HTTPAttach(router *mux.Router) error { return nil }
